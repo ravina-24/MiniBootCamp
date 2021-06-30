@@ -1,0 +1,21 @@
+#! /bin/bash -x
+
+read -p "1. convert  the Fahrenheit temp into celsius:_" tc
+read -p "2. convert the celsius temp into fahrenheit:-"  tf
+read -p " enter the choice (1 -2):- " choice
+
+
+function tempConversion( ){
+         case $choice in
+          1)
+            tc=$((($tf-32)*5/9))
+               echo $tc  ;;
+          2)
+             tf=$((9/5 * ($tc + 32)))
+                  echo $tf ;;
+          esac
+}
+
+
+call="$( tempConversion )"
+
