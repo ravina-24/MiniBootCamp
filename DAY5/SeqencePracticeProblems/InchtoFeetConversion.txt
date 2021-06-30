@@ -1,0 +1,4 @@
+# inch to feet conversion
+Inch=42
+feet=$(( $inch/12 ))
+echo feet:$feet

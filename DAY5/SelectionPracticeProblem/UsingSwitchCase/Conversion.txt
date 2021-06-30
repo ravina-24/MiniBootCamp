@@ -1,0 +1,23 @@
+
+read -p  "1. feet to inch"
+read -p "2. inch to feet"
+read -p "3. feet to meter"
+read -p "4.meter to feet"
+read  choice
+
+case $choice in
+            1) read -p "enter the length:-" a
+
+               output=$(( $a * 12 ))
+             ;;
+            2) read -p "enter the length:-" b
+                output=$(( $b/12))
+              ;;
+            3) read -p "enter the length:-" c
+               output=$( echo $c 3.281 | awk '{ print $c / 3.281}' )
+               ;;
+             4) read -p "enter the length:-" d
+                output=$( echo $d 3.381 | awk '{ print $d * 3.281 }' )
+               ;;
+esac
+

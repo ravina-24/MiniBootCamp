@@ -1,0 +1,5 @@
+#calculation of area of rectangle 
+a=60
+b=40
+N=25
+Areaofrectangleinacres=$(( (($N)*a*b)/43560 ))

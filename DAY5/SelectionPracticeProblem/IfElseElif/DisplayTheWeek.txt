@@ -1,0 +1,28 @@
+#! /bin/bash -x
+# displaying the week days
+#variable
+NUMBER=$(( RANDOM%7  +1 ))
+#selection
+if [$NUMBER -EQ 1 ]
+then 
+        echo “Sunday”
+elif [ $NUMBER -eq 2 ]
+then
+          echo “Monday”
+elif [ $RANDOM -eq 3 ]
+then
+       echo  “Tuesday”
+elif [ $NUMBER -eq 4 ] 
+then 
+      echo “Wednesday”
+elif [ $NUMBER -eq 5 ]
+then 
+   echo “Thursday”
+elif [ $NUMBER -eq 6 ]
+then 
+         echo “Friday”
+else 
+        echo “Saturday”
+fi 
+iv] ./numberandweekday.sh
+

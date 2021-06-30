@@ -1,0 +1,4 @@
+#calculating area of rectangle in meter
+a=60
+b=40	 
+areaofrectangleinmeter=$( echo $a $b |awk  ‘{ print 60*40/3.2808 }’ )
